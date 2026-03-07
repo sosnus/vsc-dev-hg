@@ -13,5 +13,4 @@ USER coder
 RUN code-server --install-extension yzhang.markdown-all-in-one && \
     code-server --install-extension davidanson.vscode-markdownlint && \
     code-server --install-extension bierner.markdown-preview-github-styles && \
-    code-server --install-extension budparr.language-hugo-vscode && \
-    code-server --install-extension ecmel.vscode-hugo-snippets
+    code-server --install-extension budparr.language-hugo-vscode
