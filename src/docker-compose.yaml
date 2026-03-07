@@ -5,7 +5,7 @@ services:
     build: .
     container_name: vscode-hugo
     ports:
-      - "8443:8443"
+      - "8082:8080"
     volumes:
       - ./workspace:/home/coder/workspace
       - vscode-data:/home/coder/.local
