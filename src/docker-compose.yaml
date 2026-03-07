@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  vscode:
+    build: .
+    container_name: vscode-hugo
+    ports:
+      - "8443:8443"
+    volumes:
+      - ./workspace:/home/coder/workspace
+      - vscode-data:/home/coder/.local
+    environment:
+      - PASSWORD=changeme
+    restart: unless-stopped
+
+volumes:
+  vscode-data:
