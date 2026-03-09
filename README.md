@@ -19,6 +19,11 @@ docker run -d \
 sudo mkdir /var/docker-storage/vsc-dev-hg/workspace
 ```
 
+## stop container and remove storage
+```bash
+docker rm -f vsc-dev-hg && docker volume rm vscode-data
+```
+
 # Other
 
 ```bash
