@@ -11,6 +11,7 @@ docker run -d \
   -v vscode-data:/home/coder/.local \
   -e PASSWORD=changeme \
   --restart unless-stopped \
+  sosnus/vsc-dev-hg
 ```
 
 
