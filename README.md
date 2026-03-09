@@ -6,19 +6,17 @@ Visual Studio Code Online Development Workspace for Hugo
 ```bash
 docker run -d \
   --name vsc-dev-hg \
-  -p 8082:8080 \
-  -v ./workspace:/home/coder/workspace \
+  -p 40083:8080 \
   -v vscode-data:/home/coder/.local \
   -e PASSWORD=changeme \
   --restart unless-stopped \
-  vsc-dev-hg
 ```
 
 
 
 # Other
 
-```
+```bash
 docker-compose build --no-cache
 
 docker-compose up
@@ -27,7 +25,7 @@ docker-compose up
 
 
 another
-```
+```bash
 docker compose down --volumes --remove-orphans && docker compose build --no-cache && docker compose up -d
 
 docker compose build --no-cache && docker compose up -d
@@ -49,6 +47,18 @@ docker run -d \
   --restart unless-stopped \
   vsc-dev-hg
 ```
+
+```bash
+docker run -d \
+  --name vsc-dev-hg \
+  -p 8082:8080 \
+  -v ./workspace:/home/coder/workspace \
+  -v vscode-data:/home/coder/.local \
+  -e PASSWORD=changeme \
+  --restart unless-stopped \
+  vsc-dev-hg
+```
+
 
 ## Build
 
