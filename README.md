@@ -7,12 +7,16 @@ Visual Studio Code Online Development Workspace for Hugo
 docker run -d \
   --name vsc-dev-hg \
   -p 40083:8080 \
+  -v /var/docker-storage/vsc-dev-hg/workspace:/home/coder/workspace \
   -v vscode-data:/home/coder/.local \
   -e PASSWORD=changeme \
   --restart unless-stopped \
 ```
 
 
+```bash
+sudo mkdir /var/docker-storage/vsc-dev-hg/workspace
+```
 
 # Other
 
