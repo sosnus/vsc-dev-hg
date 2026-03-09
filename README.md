@@ -19,10 +19,17 @@ docker run -d \
 sudo mkdir /var/docker-storage/vsc-dev-hg/workspace
 ```
 
+## If You have problem with access to storage
+```bash
+sudo chmod -R 777 /var/docker-storage/vsc-dev-hg/workspace
+```
+
 ## stop container and remove storage
 ```bash
 docker rm -f vsc-dev-hg && docker volume rm vscode-data
 ```
+
+
 
 # Other
 
