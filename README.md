@@ -30,6 +30,14 @@ docker rm -f vsc-dev-hg && docker volume rm vscode-data
 ```
 
 
+# Hugo
+
+## Create new project
+```bash
+
+```
+
+
 
 # Other
 
